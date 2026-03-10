@@ -1,0 +1,216 @@
+:root {
+  --coffee-dark: #2C1810;
+  --coffee-medium: #4E342E;
+  --coffee-light: #A1887F;
+  --coffee-accent: #D7CCC8;
+  --gold-accent: #C5A059;
+  --bg-soft: #FDFBF9;
+  --text-main: #3E2723;
+  --text-muted: #6D4C41;
+}
+
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+  background-color: var(--bg-soft);
+  color: var(--text-main);
+  font-family: 'Outfit', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+/* Navbar Premium */
+.navbar-dark {
+  background-color: var(--coffee-dark) !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--gold-accent) !important;
+}
+
+/* Hero Section Modern */
+.hero-section {
+  background: linear-gradient(135deg, var(--coffee-dark) 0%, var(--coffee-medium) 100%);
+  color: white;
+  padding: 6rem 0;
+  margin-bottom: 3rem;
+  border-radius: 0 0 50px 50px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.05) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+/* Cards & Components */
+.coffee-card {
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.coffee-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.coffee-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.coffee-card:hover .coffee-image {
+  transform: scale(1.05);
+}
+
+.section-title {
+  color: var(--coffee-dark);
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 15px;
+  margin-bottom: 40px;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background-color: var(--gold-accent);
+  border-radius: 2px;
+}
+
+.btn-primary {
+  background-color: var(--coffee-medium);
+  border-color: var(--coffee-medium);
+  padding: 0.6rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--coffee-dark);
+  border-color: var(--coffee-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Specialty Mixins/Boxes */
+.info-box,
+.warning-box,
+.success-box {
+  padding: 25px;
+  margin: 25px 0;
+  border-radius: 12px;
+  border-left: 5px solid;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
+}
+
+.info-box {
+  background-color: #FFFDE7;
+  border-left-color: var(--gold-accent);
+}
+
+.warning-box {
+  background-color: #FFF3E0;
+  border-left-color: #FF9800;
+}
+
+.success-box {
+  background-color: #F1F8E9;
+  border-left-color: #4CAF50;
+}
+
+.recipe-card {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.recipe-title {
+  color: var(--coffee-dark);
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.step-number {
+  background-color: var(--gold-accent);
+  color: var(--coffee-dark);
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  margin-right: 12px;
+}
+
+.img-placeholder {
+  background: linear-gradient(135deg, var(--coffee-light) 0%, var(--coffee-medium) 100%);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 220px;
+  border-radius: 12px;
+  font-weight: 500;
+}
+
+/* Footer Modern */
+footer {
+  background-color: var(--coffee-dark) !important;
+  color: var(--coffee-accent) !important;
+  padding: 3rem 0;
+}
+
+footer a {
+  color: var(--gold-accent);
+}
+
+footer a:hover {
+  color: white;
+}
