@@ -35,6 +35,13 @@ jobs:
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '8.0.x' # Ajusta a tu versión
+      - name: Publish and Generate Static Files
+        run: |
+          dotnet publish -c Release -o release
+          # Aquí ejecutarías la herramienta que convierte cshtml a html
+          # Ejemplo con una herramienta global:
+          dotnet tool install --global TerevintoSoftware.StaticSiteGenerator.Tool
+          ssg --project ./WebApplication6.csproj --output ./public --assembly ./release/WebApplication6.dll
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
