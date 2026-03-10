@@ -1,0 +1,307 @@
+@page
+@model WebApplication3.Pages.TuesteModel
+@{
+    ViewData["Title"] = "Tueste de Café";
+}
+
+<div class="container">
+    <h1 class="section-title">🔥 Tueste de Café</h1>
+    <p class="lead mb-4">Guía completa sobre el proceso de tueste y sus efectos en el sabor del café</p>
+
+    <div class="recipe-card">
+        <h3 class="recipe-title">¿Qué es el Tueste?</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    El tueste es el proceso de calentar los granos de café verdes para desarrollar sus sabores y aromas.
+                    Durante este proceso, los granos experimentan cambios químicos y físicos que transforman
+                    el sabor, color, aroma y cuerpo del café.
+                </p>
+                <h5>Cambios Durante el Tueste:</h5>
+                <ul>
+                    <li><strong>Color:</strong> Verde → Amarillo → Marrón claro → Marrón oscuro</li>
+                    <li><strong>Tamaño:</strong> Los granos se expanden (aumentan ~20% en volumen)</li>
+                    <li><strong>Peso:</strong> Pierden humedad (pérdida de 12-20% del peso)</li>
+                    <li><strong>Aceites:</strong> Se desarrollan y migran a la superficie</li>
+                    <li><strong>Azúcares:</strong> Se caramelizan</li>
+                    <li><strong>Ácidos:</strong> Se desarrollan y luego se degradan</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <div class="img-placeholder">
+                    <div>
+                        <i style="font-size: 3rem;">🔥</i>
+                        <p>Tueste</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <h3 class="recipe-title">Niveles de Tueste</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <h5>Tueste Claro (Light Roast):</h5>
+                <ul>
+                    <li><strong>Color:</strong> Marrón claro, sin aceites visibles</li>
+                    <li><strong>Temperatura:</strong> 180-205°C</li>
+                    <li><strong>Características:</strong>
+                        <ul>
+                            <li>Acidez alta</li>
+                            <li>Cuerpo ligero</li>
+                            <li>Sabores originales del grano más presentes</li>
+                            <li>Notas frutales y florales</li>
+                        </ul>
+                    </li>
+                    <li><strong>Mejor para:</strong> Métodos de filtro (V60, Chemex), café de especialidad</li>
+                </ul>
+                <h5 class="mt-3">Tueste Medio (Medium Roast):</h5>
+                <ul>
+                    <li><strong>Color:</strong> Marrón medio, algunos aceites</li>
+                    <li><strong>Temperatura:</strong> 210-220°C</li>
+                    <li><strong>Características:</strong>
+                        <ul>
+                            <li>Balance entre acidez y cuerpo</li>
+                            <li>Sabores más desarrollados</li>
+                            <li>Notas de caramelo y nueces</li>
+                        </ul>
+                    </li>
+                    <li><strong>Mejor para:</strong> Uso general, espresso, métodos manuales</li>
+                </ul>
+                <h5 class="mt-3">Tueste Oscuro (Dark Roast):</h5>
+                <ul>
+                    <li><strong>Color:</strong> Marrón oscuro a casi negro, aceitoso</li>
+                    <li><strong>Temperatura:</strong> 225-245°C</li>
+                    <li><strong>Características:</strong>
+                        <ul>
+                            <li>Acidez baja</li>
+                            <li>Cuerpo completo</li>
+                            <li>Sabores del tueste dominantes</li>
+                            <li>Notas de chocolate, especias, ahumado</li>
+                        </ul>
+                    </li>
+                    <li><strong>Mejor para:</strong> Espresso tradicional, café con leche</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <div class="img-placeholder">
+                    <div>
+                        <i style="font-size: 3rem;">🎨</i>
+                        <p>Niveles</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <h3 class="recipe-title">Etapas del Tueste</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <h5>Proceso Completo:</h5>
+                <ol>
+                    <li><strong>Secado (0-5 min):</strong>
+                        <ul>
+                            <li>Granos verdes se calientan</li>
+                            <li>Pérdida de humedad</li>
+                            <li>Color cambia a amarillo</li>
+                        </ul>
+                    </li>
+                    <li><strong>Primer Crack (5-8 min):</strong>
+                        <ul>
+                            <li>Sonido de palomitas de maíz</li>
+                            <li>Granos se expanden</li>
+                            <li>Fin del tueste claro</li>
+                        </ul>
+                    </li>
+                    <li><strong>Desarrollo (8-12 min):</strong>
+                        <ul>
+                            <li>Caramelización de azúcares</li>
+                            <li>Desarrollo de sabores</li>
+                            <li>Zona de tueste medio</li>
+                        </ul>
+                    </li>
+                    <li><strong>Segundo Crack (12-15 min):</strong>
+                        <ul>
+                            <li>Sonido más agudo</li>
+                            <li>Inicio de tueste oscuro</li>
+                            <li>Aceites migran a superficie</li>
+                        </ul>
+                    </li>
+                    <li><strong>Enfriado:</strong>
+                        <ul>
+                            <li>Detener el proceso inmediatamente</li>
+                            <li>Enfriar rápidamente</li>
+                            <li>Prevenir sobre-tueste</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+            <div class="col-md-4">
+                <div class="img-placeholder">
+                    <div>
+                        <i style="font-size: 3rem;">⏱️</i>
+                        <p>Etapas</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <h3 class="recipe-title">Perfiles de Tueste</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <h5>Tipos de Perfiles:</h5>
+                <ul>
+                    <li><strong>Tueste Rápido:</strong>
+                        <ul>
+                            <li>Alta temperatura, tiempo corto</li>
+                            <li>Resultado: Acidez alta, cuerpo ligero</li>
+                            <li>Riesgo: Tueste desigual</li>
+                        </ul>
+                    </li>
+                    <li><strong>Tueste Lento:</strong>
+                        <ul>
+                            <li>Temperatura moderada, tiempo largo</li>
+                            <li>Resultado: Desarrollo completo, sabores complejos</li>
+                            <li>Riesgo: Pérdida de acidez</li>
+                        </ul>
+                    </li>
+                    <li><strong>Tueste Controlado:</strong>
+                        <ul>
+                            <li>Curva de temperatura específica</li>
+                            <li>Resultado: Balance óptimo</li>
+                            <li>Ideal para café de especialidad</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <div class="img-placeholder">
+                    <div>
+                        <i style="font-size: 3rem;">📈</i>
+                        <p>Perfiles</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <h3 class="recipe-title">Tueste Artesanal vs. Comercial</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <h5>Ventajas del Tueste Artesanal:</h5>
+                <ul>
+                    <li><strong>Control total:</strong> Ajustar perfil según el grano</li>
+                    <li><strong>Frescura:</strong> Tostar según demanda</li>
+                    <li><strong>Calidad:</strong> Atención a cada lote</li>
+                    <li><strong>Variedad:</strong> Ofrecer diferentes perfiles</li>
+                    <li><strong>Diferenciación:</strong> Valor agregado único</li>
+                </ul>
+                <h5 class="mt-3">Consideraciones para Food Truck:</h5>
+                <ul>
+                    <li>Espacio limitado para tostadora</li>
+                    <li>Inversión inicial significativa</li>
+                    <li>Tiempo requerido para tostar</li>
+                    <li>Ventilación y permisos necesarios</li>
+                    <li>Alternativa: Trabajar con tostador local</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <div class="img-placeholder">
+                    <div>
+                        <i style="font-size: 3rem;">🏭</i>
+                        <p>Artesanal</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <h3 class="recipe-title">Almacenamiento Post-Tueste</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <h5>Mejores Prácticas:</h5>
+                <ul>
+                    <li><strong>Reposo (Degassing):</strong>
+                        <ul>
+                            <li>Dejar reposar 12-24 horas después del tueste</li>
+                            <li>Permite liberación de CO2</li>
+                            <li>Mejora la extracción</li>
+                        </ul>
+                    </li>
+                    <li><strong>Almacenamiento:</strong>
+                        <ul>
+                            <li>Contenedor hermético con válvula unidireccional</li>
+                            <li>Lugar fresco y seco</li>
+                            <li>Proteger de luz, calor y humedad</li>
+                            <li>No refrigerar ni congelar</li>
+                        </ul>
+                    </li>
+                    <li><strong>Ventana óptima:</strong>
+                        <ul>
+                            <li>Mejor sabor: 3-14 días después del tueste</li>
+                            <li>Usar dentro de 3-4 semanas máximo</li>
+                            <li>Después de 1 mes, pérdida significativa de sabor</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <div class="img-placeholder">
+                    <div>
+                        <i style="font-size: 3rem;">⏳</i>
+                        <p>Reposo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <h3 class="recipe-title">Selección de Tueste para tu Menú</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <h5>Recomendaciones por Bebida:</h5>
+                <ul>
+                    <li><strong>Espresso:</strong> Medio a medio-oscuro</li>
+                    <li><strong>Cappuccino/Latte:</strong> Medio-oscuro (soporta bien la leche)</li>
+                    <li><strong>Americano:</strong> Medio</li>
+                    <li><strong>V60/Chemex:</strong> Claro a medio</li>
+                    <li><strong>Cold Brew:</strong> Medio (mejor extracción en frío)</li>
+                    <li><strong>Cortado:</strong> Medio-oscuro</li>
+                </ul>
+                <div class="info-box mt-3">
+                    <strong>Tip:</strong> Para un food truck, considera tener un tueste principal (medio-oscuro) 
+                    que funcione bien para la mayoría de bebidas, y opcionalmente un tueste especial 
+                    (claro) para clientes que buscan algo diferente.
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="img-placeholder">
+                    <div>
+                        <i style="font-size: 3rem;">☕</i>
+                        <p>Menú</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="success-box mt-4">
+        <h5>✅ Checklist para Evaluar Tueste:</h5>
+        <ul>
+            <li>☐ Color uniforme en todos los granos</li>
+            <li>☐ Sin granos quemados o sin tostar</li>
+            <li>☐ Aroma agradable y desarrollado</li>
+            <li>☐ Fecha de tueste visible</li>
+            <li>☐ Prueba de sabor (cupping) positiva</li>
+            <li>☐ Adecuado para método de preparación</li>
+            <li>☐ Consistencia entre lotes</li>
+        </ul>
+    </div>
+</div>

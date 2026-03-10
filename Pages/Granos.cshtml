@@ -1,0 +1,326 @@
+@page
+@model WebApplication3.Pages.GranosModel
+@{
+    ViewData["Title"] = "Granos de Café";
+}
+
+<div class="container">
+    <h1 class="section-title">🌱 Granos de Café</h1>
+    <p class="lead mb-4">Guía completa sobre los granos de café: variedades, características y selección</p>
+
+    <div class="recipe-card">
+        <h3 class="recipe-title">Especies Principales de Café</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <h5>Coffea Arabica (Arábica):</h5>
+                <ul>
+                    <li><strong>Calidad:</strong> Superior, más suave y aromático</li>
+                    <li><strong>Contenido de cafeína:</strong> 1.2-1.5%</li>
+                    <li><strong>Altitud:</strong> Crece mejor entre 600-2000msnm</li>
+                    <li><strong>Sabor:</strong> Complejo, dulce, notas frutales y florales</li>
+                    <li><strong>Precio:</strong> Más caro</li>
+                    <li><strong>Uso:</strong> Café de especialidad, espresso, métodos manuales</li>
+                </ul>
+                <h5 class="mt-3">Coffea Canephora (Robusta):</h5>
+                <ul>
+                    <li><strong>Calidad:</strong> Menor, más amargo</li>
+                    <li><strong>Contenido de cafeína:</strong> 2.2-2.7%</li>
+                    <li><strong>Altitud:</strong> Crece en altitudes más bajas</li>
+                    <li><strong>Sabor:</strong> Más fuerte, terroso, notas de madera</li>
+                    <li><strong>Precio:</strong> Más económico</li>
+                    <li><strong>Uso:</strong> Mezclas para espresso, café instantáneo</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <div class="img-placeholder">
+                    <div>
+                        <i style="font-size: 3rem;">🌱</i>
+                        <p>Especies</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <h3 class="recipe-title">Variedades de Arábica</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <h5>Variedades Principales:</h5>
+                <ul>
+                    <li><strong>Typica:</strong>
+                        <ul>
+                            <li>Una de las variedades más antiguas</li>
+                            <li>Sabor limpio y dulce</li>
+                            <li>Baja productividad</li>
+                        </ul>
+                    </li>
+                    <li><strong>Bourbon:</strong>
+                        <ul>
+                            <li>Mutación natural de Typica</li>
+                            <li>Excelente calidad en taza</li>
+                            <li>Notas dulces y balanceadas</li>
+                        </ul>
+                    </li>
+                    <li><strong>Caturra:</strong>
+                        <ul>
+                            <li>Mutación de Bourbon</li>
+                            <li>Mayor productividad</li>
+                            <li>Buena calidad</li>
+                        </ul>
+                    </li>
+                    <li><strong>Geisha:</strong>
+                        <ul>
+                            <li>Variedad premium</li>
+                            <li>Notas florales y de té</li>
+                            <li>Muy valorada en competencias</li>
+                        </ul>
+                    </li>
+                    <li><strong>Pacamara:</strong>
+                        <ul>
+                            <li>Híbrido de Pacas y Maragogipe</li>
+                            <li>Granos grandes</li>
+                            <li>Sabor complejo</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <div class="img-placeholder">
+                    <div>
+                        <i style="font-size: 3rem;">🌿</i>
+                        <p>Variedades</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <h3 class="recipe-title">Características Físicas del Grano</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <h5>Evaluación Visual:</h5>
+                <ul>
+                    <li><strong>Tamaño:</strong>
+                        <ul>
+                            <li>Granos grandes generalmente indican mejor calidad</li>
+                            <li>Clasificación: Peaberry, AA, AB, etc.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Color:</strong>
+                        <ul>
+                            <li>Verde antes del tueste</li>
+                            <li>Después del tueste: marrón claro a oscuro</li>
+                            <li>Color uniforme indica tueste consistente</li>
+                        </ul>
+                    </li>
+                    <li><strong>Forma:</strong>
+                        <ul>
+                            <li>Granos planos (típicos)</li>
+                            <li>Peaberry (granos redondos, mutación)</li>
+                        </ul>
+                    </li>
+                    <li><strong>Defectos:</strong>
+                        <ul>
+                            <li>Sin agujeros (broca)</li>
+                            <li>Sin manchas</li>
+                            <li>Sin granos partidos</li>
+                            <li>Sin granos negros o mohosos</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <div class="img-placeholder">
+                    <div>
+                        <i style="font-size: 3rem;">🔬</i>
+                        <p>Evaluación</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <h3 class="recipe-title">Factores que Afectan el Sabor</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <h5>Terroir (Tierra + Clima):</h5>
+                <ul>
+                    <li><strong>Altitud:</strong>
+                        <ul>
+                            <li>Mayor altitud = mayor acidez y complejidad</li>
+                            <li>Ideal: 1200-1800msnm</li>
+                        </ul>
+                    </li>
+                    <li><strong>Suelo:</strong>
+                        <ul>
+                            <li>Suelos volcánicos ricos en minerales</li>
+                            <li>Buen drenaje</li>
+                        </ul>
+                    </li>
+                    <li><strong>Clima:</strong>
+                        <ul>
+                            <li>Temperatura: 15-24°C ideal</li>
+                            <li>Lluvia: 1500-2000mm anuales</li>
+                            <li>Estaciones definidas</li>
+                        </ul>
+                    </li>
+                    <li><strong>Procesamiento:</strong>
+                        <ul>
+                            <li>Lavado, Natural, Honey</li>
+                            <li>Afecta significativamente el sabor final</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <div class="img-placeholder">
+                    <div>
+                        <i style="font-size: 3rem;">🌍</i>
+                        <p>Terroir</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <h3 class="recipe-title">Selección de Granos para tu Negocio</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <h5>Criterios de Selección:</h5>
+                <ul>
+                    <li><strong>Calidad:</strong>
+                        <ul>
+                            <li>Puntuación SCA ≥80 puntos</li>
+                            <li>Sin defectos visibles</li>
+                            <li>Origen conocido y trazable</li>
+                        </ul>
+                    </li>
+                    <li><strong>Frescura:</strong>
+                        <ul>
+                            <li>Tostado reciente (máximo 2-3 semanas)</li>
+                            <li>Fecha de tueste visible</li>
+                        </ul>
+                    </li>
+                    <li><strong>Consistencia:</strong>
+                        <ul>
+                            <li>Proveedor confiable</li>
+                            <li>Disponibilidad regular</li>
+                            <li>Calidad consistente entre lotes</li>
+                        </ul>
+                    </li>
+                    <li><strong>Precio:</strong>
+                        <ul>
+                            <li>Balance entre calidad y costo</li>
+                            <li>Considerar margen de ganancia</li>
+                        </ul>
+                    </li>
+                    <li><strong>Perfil de sabor:</strong>
+                        <ul>
+                            <li>Adecuado para tu mercado objetivo</li>
+                            <li>Variedad para diferentes preferencias</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <div class="img-placeholder">
+                    <div>
+                        <i style="font-size: 3rem;">🛒</i>
+                        <p>Selección</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <h3 class="recipe-title">Almacenamiento de Granos Verdes</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <h5>Mejores Prácticas:</h5>
+                <ul>
+                    <li><strong>Temperatura:</strong> 15-20°C</li>
+                    <li><strong>Humedad:</strong> 50-60%</li>
+                    <li><strong>Ventilación:</strong> Buena circulación de aire</li>
+                    <li><strong>Oscuridad:</strong> Proteger de la luz</li>
+                    <li><strong>Separación:</strong> De olores fuertes</li>
+                    <li><strong>Contenedores:</strong> Herméticos, preferiblemente con válvula</li>
+                    <li><strong>Rotación:</strong> Sistema FIFO</li>
+                </ul>
+                <div class="warning-box mt-3">
+                    <strong>⚠️ Importante:</strong> Los granos verdes pueden almacenarse hasta 1 año en condiciones ideales, 
+                    pero es mejor usarlos dentro de 6 meses para máxima frescura.
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="img-placeholder">
+                    <div>
+                        <i style="font-size: 3rem;">📦</i>
+                        <p>Almacenamiento</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <h3 class="recipe-title">Proveedores en Chile</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <h5>Consideraciones al Elegir Proveedor:</h5>
+                <ul>
+                    <li><strong>Tostadores locales:</strong>
+                        <ul>
+                            <li>Apoyo a la economía local</li>
+                            <li>Mayor frescura</li>
+                            <li>Mejor comunicación</li>
+                        </ul>
+                    </li>
+                    <li><strong>Importadores:</strong>
+                        <ul>
+                            <li>Mayor variedad de orígenes</li>
+                            <li>Volúmenes mayores</li>
+                        </ul>
+                    </li>
+                    <li><strong>Direct Trade:</strong>
+                        <ul>
+                            <li>Compra directa de productores</li>
+                            <li>Mejor precio para productor</li>
+                            <li>Mayor trazabilidad</li>
+                        </ul>
+                    </li>
+                </ul>
+                <h5 class="mt-3">Preguntas Clave al Proveedor:</h5>
+                <ul>
+                    <li>¿Cuál es la fecha de tueste?</li>
+                    <li>¿Puedo probar antes de comprar?</li>
+                    <li>¿Cuál es la disponibilidad?</li>
+                    <li>¿Ofrecen información de origen?</li>
+                    <li>¿Cuál es su política de devolución?</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <div class="img-placeholder">
+                    <div>
+                        <i style="font-size: 3rem;">🤝</i>
+                        <p>Proveedores</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="info-box mt-4">
+        <h5>💡 Tip para Food Truck:</h5>
+        <p>
+            Para un food truck, considera tener 2-3 opciones de granos diferentes:
+            uno para espresso (cuerpo completo), uno para métodos de filtro (más suave),
+            y opcionalmente uno de temporada o especial. Esto permite variedad sin 
+            sobrecargar tu inventario limitado.
+        </p>
+    </div>
+</div>

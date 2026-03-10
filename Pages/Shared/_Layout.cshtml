@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Barismo & Café Especialidad</title>
+    <meta name="description" content="@(ViewData["Description"] ?? "Guía completa sobre barismo, café de especialidad y emprendimiento de food trucks en Chile. Aprende recetas, técnicas y requisitos legales.")" />
+    <meta name="keywords" content="barismo, café de especialidad, chile, food truck, recetas de café, café profesional, emprendimiento café" />
+    <meta name="author" content="Jesnybel Rodriguez" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="@Context.Request.Path" />
+    <meta property="og:title" content="@ViewData["Title"] - Barismo & Café Especialidad" />
+    <meta property="og:description" content="@(ViewData["Description"] ?? "Guía completa sobre barismo y café de especialidad en Chile.")" />
+    <meta property="og:image" content="~/images/og-image.jpg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="@Context.Request.Path" />
+    <meta property="twitter:title" content="@ViewData["Title"] - Barismo & Café Especialidad" />
+    <meta property="twitter:description" content="@(ViewData["Description"] ?? "Guía completa sobre barismo y café de especialidad en Chile.")" />
+    <meta property="twitter:image" content="~/images/og-image.jpg" />
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/WebApplication3.styles.css" asp-append-version="true" />
+
+    <script type="application/ld+json">
+    {
+      "@@context": "https://schema.org",
+      "@@type": "WebSite",
+      "name": "Barismo & Café Especialidad",
+      "url": "https://localhost:5001/",
+      "author": {
+        "@@type": "Person",
+        "name": "Jesnybel Rodriguez"
+      },
+      "description": "Guía completa sobre barismo y café de especialidad en Chile."
+    }
+    </script>
+</head>
+<body style="min-height: 100vh; display: flex; flex-direction: column;">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand fw-bold" asp-area="" asp-page="/Index">☕ Barismo & Café</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-lg-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-page="/Index">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-page="/Contacto">Contacto</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Café & Técnicas
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                                <li><a class="dropdown-item" asp-page="/CafeEspecialidad">Café de Especialidad</a></li>
+                                <li><a class="dropdown-item" asp-page="/Granos">Granos de Café</a></li>
+                                <li><a class="dropdown-item" asp-page="/Tueste">Tueste</a></li>
+                                <li><a class="dropdown-item" asp-page="/Preparacion">Preparación</a></li>
+                                <li><a class="dropdown-item" asp-page="/MaquinasCafe">Máquinas de Café</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Recetas & Prácticas
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                                <li><a class="dropdown-item" asp-page="/Recetas">Recetas</a></li>
+                                <li><a class="dropdown-item" asp-page="/BuenasPracticas">Buenas Prácticas</a></li>
+                                <li><a class="dropdown-item" asp-page="/ManejoAlimentos">Manejo de Alimentos</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Emprendimiento
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                                <li><a class="dropdown-item" asp-page="/FoodTruck">Food Truck Móvil</a></li>
+                                <li><a class="dropdown-item" asp-page="/PermisosSanitarios">Permisos Sanitarios</a></li>
+                                <li><a class="dropdown-item" asp-page="/Permisos">Permisos y Licencias</a></li>
+                                <li><a class="dropdown-item" asp-page="/Impuestos">Impuestos</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container" style="flex: 1;">
+        <main role="main" class="pb-5">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted bg-light mt-5 pt-5">
+        <div class="container py-3">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2026 - Barismo & Café Especialidad - Chile</p>
+                    <p class="mb-0"><strong>Autora, Administradora y Creadora de Contenido:</strong> Jesnybel Rodriguez</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p>Guía completa para emprendedores del café</p>
+                    <p class="mb-0"><a asp-page="/Contacto" class="text-decoration-none">Contacto</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

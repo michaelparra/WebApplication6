@@ -1,0 +1,303 @@
+@page
+@model WebApplication3.Pages.PreparacionModel
+@{
+    ViewData["Title"] = "Preparación de Café";
+}
+
+<div class="container">
+    <h1 class="section-title">☕ Preparación de Café</h1>
+    <p class="lead mb-4">Métodos y técnicas profesionales para preparar café de especialidad</p>
+
+    <div class="recipe-card">
+        <h3 class="recipe-title">Variables de Extracción</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <h5>Los 4 Factores Principales:</h5>
+                <ul>
+                    <li><strong>1. Proporción (Ratio):</strong>
+                        <ul>
+                            <li>Relación café:agua</li>
+                            <li>Ejemplo: 1:15 (1g café por 15g agua)</li>
+                            <li>Espresso: 1:2 (18g café, 36g espresso)</li>
+                            <li>Filtro: 1:15 a 1:17</li>
+                        </ul>
+                    </li>
+                    <li><strong>2. Molienda:</strong>
+                        <ul>
+                            <li>Grosor del café molido</li>
+                            <li>Afecta tiempo de contacto</li>
+                            <li>Más fino = más extracción</li>
+                        </ul>
+                    </li>
+                    <li><strong>3. Tiempo:</strong>
+                        <ul>
+                            <li>Duración del contacto agua-café</li>
+                            <li>Espresso: 25-30 segundos</li>
+                            <li>Filtro: 2-4 minutos</li>
+                        </ul>
+                    </li>
+                    <li><strong>4. Temperatura:</strong>
+                        <ul>
+                            <li>Calor del agua</li>
+                            <li>Ideal: 90-96°C</li>
+                            <li>Más caliente = más extracción</li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="info-box mt-3">
+                    <strong>Regla de Oro:</strong> Si el café está amargo, reduce extracción (molienda más gruesa, menos tiempo, menos temperatura).
+                    Si está agrio, aumenta extracción (molienda más fina, más tiempo, más temperatura).
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="img-placeholder">
+                    <div>
+                        <i style="font-size: 3rem;">⚖️</i>
+                        <p>Variables</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <h3 class="recipe-title">Métodos de Preparación</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <h5>Métodos por Inmersión:</h5>
+                <ul>
+                    <li><strong>French Press:</strong>
+                        <ul>
+                            <li>Contacto completo, tiempo controlado</li>
+                            <li>Proporción: 1:15</li>
+                            <li>Tiempo: 4 minutos</li>
+                            <li>Molienda: Gruesa</li>
+                        </ul>
+                    </li>
+                    <li><strong>Cold Brew:</strong>
+                        <ul>
+                            <li>Extracción en frío, tiempo largo</li>
+                            <li>Proporción: 1:8 (concentrado)</li>
+                            <li>Tiempo: 12-24 horas</li>
+                            <li>Molienda: Muy gruesa</li>
+                        </ul>
+                    </li>
+                    <li><strong>Aeropress:</strong>
+                        <ul>
+                            <li>Presión + inmersión</li>
+                            <li>Proporción: 1:15</li>
+                            <li>Tiempo: 1-2 minutos</li>
+                            <li>Molienda: Fino-medio</li>
+                        </ul>
+                    </li>
+                </ul>
+                <h5 class="mt-3">Métodos de Goteo:</h5>
+                <ul>
+                    <li><strong>V60:</strong>
+                        <ul>
+                            <li>Control total del vertido</li>
+                            <li>Proporción: 1:15</li>
+                            <li>Tiempo: 2:30-3:30 minutos</li>
+                            <li>Molienda: Medio</li>
+                        </ul>
+                    </li>
+                    <li><strong>Chemex:</strong>
+                        <ul>
+                            <li>Filtro grueso, café limpio</li>
+                            <li>Proporción: 1:15</li>
+                            <li>Tiempo: 4-5 minutos</li>
+                            <li>Molienda: Medio-grueso</li>
+                        </ul>
+                    </li>
+                    <li><strong>Kalita Wave:</strong>
+                        <ul>
+                            <li>Fondo plano, extracción uniforme</li>
+                            <li>Proporción: 1:15</li>
+                            <li>Tiempo: 3-4 minutos</li>
+                            <li>Molienda: Medio</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <div class="img-placeholder">
+                    <div>
+                        <i style="font-size: 3rem;">🔧</i>
+                        <p>Métodos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <h3 class="recipe-title">Técnica de Vertido (Pour Over)</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <h5>Elementos Clave:</h5>
+                <ul>
+                    <li><strong>Bloom (Hinchazón):</strong>
+                        <ul>
+                            <li>Primer vertido: 2x el peso del café</li>
+                            <li>Dejar reposar 30-45 segundos</li>
+                            <li>Permite liberación de CO2</li>
+                            <li>Mejora extracción uniforme</li>
+                        </ul>
+                    </li>
+                    <li><strong>Patrón de Vertido:</strong>
+                        <ul>
+                            <li>Espiral desde el centro hacia afuera</li>
+                            <li>Mantener altura constante del vertido</li>
+                            <li>Evitar tocar el filtro con el agua</li>
+                        </ul>
+                    </li>
+                    <li><strong>Control de Flujo:</strong>
+                        <ul>
+                            <li>Vertido constante y controlado</li>
+                            <li>Mantener nivel de agua</li>
+                            <li>No dejar secar completamente</li>
+                        </ul>
+                    </li>
+                    <li><strong>Agitación:</strong>
+                        <ul>
+                            <li>Suave durante bloom</li>
+                            <li>Opcional durante vertidos</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <div class="img-placeholder">
+                    <div>
+                        <i style="font-size: 3rem;">💧</i>
+                        <p>Vertido</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <h3 class="recipe-title">Calibración de Espresso</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <h5>Proceso de Calibración:</h5>
+                <ol>
+                    <li><strong>Pesar el café:</strong> 18-20g (depende del portafiltro)</li>
+                    <li><strong>Moler y distribuir:</strong> Uniformemente en el portafiltro</li>
+                    <li><strong>Presionar (Tamper):</strong> 15-20kg de presión, superficie plana</li>
+                    <li><strong>Extraer:</strong> 25-30 segundos</li>
+                    <li><strong>Pesar el resultado:</strong> 36-40g de espresso (proporción 1:2)</li>
+                    <li><strong>Evaluar:</strong>
+                        <ul>
+                            <li>Si sale muy rápido: Molienda más fina</li>
+                            <li>Si sale muy lento: Molienda más gruesa</li>
+                            <li>Si está amargo: Reducir tiempo o molienda más gruesa</li>
+                            <li>Si está agrio: Aumentar tiempo o molienda más fina</li>
+                        </ul>
+                    </li>
+                </ol>
+                <div class="warning-box mt-3">
+                    <strong>⚠️ Importante:</strong> Calibra tu espresso al inicio de cada día y cuando cambies de café.
+                    Factores como humedad y temperatura ambiente afectan la extracción.
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="img-placeholder">
+                    <div>
+                        <i style="font-size: 3rem;">🎯</i>
+                        <p>Calibración</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <h3 class="recipe-title">Troubleshooting (Solución de Problemas)</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <h5>Problemas Comunes y Soluciones:</h5>
+                <ul>
+                    <li><strong>Café amargo:</strong>
+                        <ul>
+                            <li>Causa: Sobre-extracción</li>
+                            <li>Solución: Molienda más gruesa, menos tiempo, menos temperatura</li>
+                        </ul>
+                    </li>
+                    <li><strong>Café agrio/ácido:</strong>
+                        <ul>
+                            <li>Causa: Sub-extracción</li>
+                            <li>Solución: Molienda más fina, más tiempo, más temperatura</li>
+                        </ul>
+                    </li>
+                    <li><strong>Espresso sin crema:</strong>
+                        <ul>
+                            <li>Causa: Café viejo, molienda incorrecta, presión insuficiente</li>
+                            <li>Solución: Café fresco, ajustar molienda, verificar máquina</li>
+                        </ul>
+                    </li>
+                    <li><strong>Extracción desigual:</strong>
+                        <ul>
+                            <li>Causa: Distribución desigual, tamper incorrecto</li>
+                            <li>Solución: Distribuir uniformemente, tamper plano</li>
+                        </ul>
+                    </li>
+                    <li><strong>Sabor plano:</strong>
+                        <ul>
+                            <li>Causa: Café viejo, proporción incorrecta</li>
+                            <li>Solución: Café fresco, ajustar proporción</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <div class="img-placeholder">
+                    <div>
+                        <i style="font-size: 3rem;">🔧</i>
+                        <p>Problemas</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <h3 class="recipe-title">Equipamiento Esencial</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <h5>Para Food Truck o Local:</h5>
+                <ul>
+                    <li><strong>Máquina de espresso:</strong> Calidad comercial</li>
+                    <li><strong>Molino:</strong> De muelas (burr), ajustable</li>
+                    <li><strong>Balanza:</strong> Precisión 0.1g</li>
+                    <li><strong>Tamper:</strong> Tamaño correcto para portafiltro</li>
+                    <li><strong>V60 o método de filtro:</strong> Para opciones sin leche</li>
+                    <li><strong>Termómetro:</strong> Para control de temperatura</li>
+                    <li><strong>Timer:</strong> Para control de tiempos</li>
+                    <li><strong>Filtros:</strong> Stock adecuado</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <div class="img-placeholder">
+                    <div>
+                        <i style="font-size: 3rem;">🛠️</i>
+                        <p>Equipamiento</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="info-box mt-4">
+        <h5>💡 Consejos para Consistencia:</h5>
+        <ul>
+            <li>Documenta tus recetas exitosas (proporción, tiempo, temperatura, molienda)</li>
+            <li>Usa siempre la misma balanza y equipo</li>
+            <li>Calibra al inicio del día</li>
+            <li>Prueba cada lote de café nuevo</li>
+            <li>Mantén tu equipo limpio y calibrado</li>
+            <li>Entrena tu paladar regularmente</li>
+        </ul>
+    </div>
+</div>

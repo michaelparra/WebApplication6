@@ -1,0 +1,360 @@
+@page
+@model WebApplication3.Pages.PermisosModel
+@{
+    ViewData["Title"] = "Permisos y Licencias";
+}
+
+<div class="container">
+    <h1 class="section-title">📜 Permisos y Licencias</h1>
+    <p class="lead mb-4">Guía completa sobre permisos y licencias necesarios para operar un food truck de café en Chile</p>
+
+    <div class="warning-box">
+        <h4>⚠️ Importante</h4>
+        <p>
+            Los requisitos pueden variar según la comuna y región donde operes.
+            Es <strong>esencial</strong> verificar los requisitos específicos con las autoridades locales.
+        </p>
+    </div>
+
+    <div class="recipe-card">
+        <h3 class="recipe-title">Permisos Municipales</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <h5>Licencia de Funcionamiento:</h5>
+                <ul>
+                    <li><strong>Requisito:</strong>
+                        <ul>
+                            <li>Obligatorio en la mayoría de comunas</li>
+                            <li>Específico para vehículos móviles</li>
+                            <li>Renovación anual generalmente</li>
+                        </ul>
+                    </li>
+                    <li><strong>Documentación Necesaria:</strong>
+                        <ul>
+                            <li>Permiso sanitario vigente</li>
+                            <li>Documentos del vehículo</li>
+                            <li>RUT del propietario</li>
+                            <li>Croquis del vehículo</li>
+                            <li>Certificado de no deuda</li>
+                        </ul>
+                    </li>
+                    <li><strong>Proceso:</strong>
+                        <ul>
+                            <li>Solicitud en Dirección de Obras o similar</li>
+                            <li>Revisión de documentación</li>
+                            <li>Inspección del vehículo (en algunas comunas)</li>
+                            <li>Pago de derechos</li>
+                            <li>Otorgamiento de licencia</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <div class="img-placeholder">
+                    <div>
+                        <i style="font-size: 3rem;">🏛️</i>
+                        <p>Municipal</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <h3 class="recipe-title">Permiso de Circulación y Revisión Técnica</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <h5>Requisitos del Vehículo:</h5>
+                <ul>
+                    <li><strong>Permiso de Circulación:</strong>
+                        <ul>
+                            <li>Renovación anual</li>
+                            <li>Pago de patente</li>
+                            <li>Seguro obligatorio vigente</li>
+                        </ul>
+                    </li>
+                    <li><strong>Revisión Técnica:</strong>
+                        <ul>
+                            <li>Vigente (según tipo de vehículo)</li>
+                            <li>Requisito para permiso de circulación</li>
+                            <li>Verificar estado mecánico</li>
+                        </ul>
+                    </li>
+                    <li><strong>Seguro Obligatorio:</strong>
+                        <ul>
+                            <li>SOAP (Seguro Obligatorio de Accidentes Personales)</li>
+                            <li>Vigente</li>
+                            <li>Requisito legal</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <div class="img-placeholder">
+                    <div>
+                        <i style="font-size: 3rem;">🚗</i>
+                        <p>Vehículo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <h3 class="recipe-title">Permisos de Ubicación</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <h5>Consideraciones por Tipo de Ubicación:</h5>
+                <ul>
+                    <li><strong>Ubicación Fija (Estacionamiento):</strong>
+                        <ul>
+                            <li>Permiso del propietario del terreno</li>
+                            <li>Autorización municipal (si aplica)</li>
+                            <li>Respetar normativas de uso de suelo</li>
+                        </ul>
+                    </li>
+                    <li><strong>Ubicación Móvil (Eventos):</strong>
+                        <ul>
+                            <li>Permiso del organizador del evento</li>
+                            <li>Autorización municipal del evento</li>
+                            <li>Verificar requisitos específicos</li>
+                        </ul>
+                    </li>
+                    <li><strong>Vía Pública:</strong>
+                        <ul>
+                            <li>Restricciones según comuna</li>
+                            <li>Horarios permitidos</li>
+                            <li>Zonas prohibidas</li>
+                            <li>Permisos especiales</li>
+                        </ul>
+                    </li>
+                    <li><strong>Centros Comerciales:</strong>
+                        <ul>
+                            <li>Contrato con el centro comercial</li>
+                            <li>Cumplir normativas del centro</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <div class="img-placeholder">
+                    <div>
+                        <i style="font-size: 3rem;">📍</i>
+                        <p>Ubicación</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <h3 class="recipe-title">Permisos Ambientales</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <h5>Consideraciones Ambientales:</h5>
+                <ul>
+                    <li><strong>Eliminación de Residuos:</strong>
+                        <ul>
+                            <li>Contrato con empresa de recolección</li>
+                            <li>Separación de residuos</li>
+                            <li>Cumplir normativas locales</li>
+                        </ul>
+                    </li>
+                    <li><strong>Emisiones:</strong>
+                        <ul>
+                            <li>Verificar normativas de emisiones</li>
+                            <li>Mantenimiento del vehículo</li>
+                            <li>Generador (si aplica) con emisiones controladas</li>
+                        </ul>
+                    </li>
+                    <li><strong>Ruido:</strong>
+                        <ul>
+                            <li>Respetar niveles de ruido</li>
+                            <li>Horarios permitidos</li>
+                            <li>Especialmente en zonas residenciales</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <div class="img-placeholder">
+                    <div>
+                        <i style="font-size: 3rem;">🌱</i>
+                        <p>Ambiental</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <h3 class="recipe-title">Permisos para Música y Entretenimiento</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <h5>Si Reproduces Música:</h5>
+                <ul>
+                    <li><strong>SCD (Sociedad Chilena del Derecho de Autor):</strong>
+                        <ul>
+                            <li>Licencia si reproduces música grabada</li>
+                            <li>Pago de derechos de autor</li>
+                            <li>Contactar SCD para información</li>
+                        </ul>
+                    </li>
+                    <li><strong>Alternativas:</strong>
+                        <ul>
+                            <li>Música libre de derechos</li>
+                            <li>Servicios de música comercial (verificar licencias)</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <div class="img-placeholder">
+                    <div>
+                        <i style="font-size: 3rem;">🎵</i>
+                        <p>Música</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <h3 class="recipe-title">Permisos para Venta de Alcohol (si aplica)</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <h5>Consideraciones:</h5>
+                <ul>
+                    <li><strong>Licencia de Alcoholes:</strong>
+                        <ul>
+                            <li>Requisito si vendes bebidas alcohólicas</li>
+                            <li>Tramitación en SEREMI de Salud</li>
+                            <li>Requisitos específicos</li>
+                            <li>Restricciones de horario</li>
+                        </ul>
+                    </li>
+                    <li><strong>Restricciones:</strong>
+                        <ul>
+                            <li>No vender a menores</li>
+                            <li>Horarios permitidos</li>
+                            <li>Zonas prohibidas</li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="info-box mt-3">
+                    <strong>Nota:</strong> Para un food truck de café, generalmente no necesitas licencia de alcoholes
+                    a menos que ofrezcas bebidas alcohólicas.
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="img-placeholder">
+                    <div>
+                        <i style="font-size: 3rem;">🍷</i>
+                        <p>Alcohol</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <h3 class="recipe-title">Checklist de Permisos</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <h5>Permisos Esenciales:</h5>
+                <ul>
+                    <li>☐ Permiso Sanitario (SEREMI de Salud)</li>
+                    <li>☐ Licencia de Funcionamiento Municipal</li>
+                    <li>☐ Permiso de Circulación vigente</li>
+                    <li>☐ Revisión Técnica vigente</li>
+                    <li>☐ Seguro Obligatorio (SOAP) vigente</li>
+                    <li>☐ Inicio de Actividades en SII</li>
+                    <li>☐ RUT Tributario</li>
+                </ul>
+                <h5 class="mt-3">Permisos Adicionales (según caso):</h5>
+                <ul>
+                    <li>☐ Permiso de ubicación específica</li>
+                    <li>☐ Permiso para eventos</li>
+                    <li>☐ Licencia de alcoholes (si aplica)</li>
+                    <li>☐ Permiso SCD (si reproduces música)</li>
+                    <li>☐ Permisos ambientales</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <div class="img-placeholder">
+                    <div>
+                        <i style="font-size: 3rem;">✅</i>
+                        <p>Checklist</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <h3 class="recipe-title">Renovación de Permisos</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <h5>Vigencia y Renovación:</h5>
+                <ul>
+                    <li><strong>Permiso Sanitario:</strong>
+                        <ul>
+                            <li>Vigencia según normativa</li>
+                            <li>Renovar antes de vencimiento</li>
+                            <li>Actualizar documentación</li>
+                        </ul>
+                    </li>
+                    <li><strong>Licencia Municipal:</strong>
+                        <ul>
+                            <li>Generalmente anual</li>
+                            <li>Renovar con anticipación</li>
+                            <li>Verificar requisitos actualizados</li>
+                        </ul>
+                    </li>
+                    <li><strong>Permiso de Circulación:</strong>
+                        <ul>
+                            <li>Anual</li>
+                            <li>Requiere revisión técnica vigente</li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="warning-box mt-3">
+                    <strong>⚠️ Importante:</strong> Mantén un calendario de vencimientos de todos tus permisos.
+                    Operar sin permisos vigentes puede resultar en multas y cierre del negocio.
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="img-placeholder">
+                    <div>
+                        <i style="font-size: 3rem;">🔄</i>
+                        <p>Renovación</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="info-box mt-4">
+        <h5>💡 Consejos para Tramitación:</h5>
+        <ul>
+            <li>Inicia trámites con anticipación (pueden tardar semanas)</li>
+            <li>Reúne toda la documentación antes de iniciar</li>
+            <li>Verifica requisitos específicos de tu comuna</li>
+            <li>Mantén copias de todos los permisos</li>
+            <li>Considera contratar gestor si es complejo</li>
+            <li>Mantén calendario de renovaciones</li>
+        </ul>
+    </div>
+
+    <div class="warning-box mt-4">
+        <h5>📞 Información de Contacto:</h5>
+        <p>
+            Para información específica sobre permisos en tu comuna, contacta:
+        </p>
+        <ul>
+            <li><strong>Municipalidad:</strong> Dirección de Obras o similar</li>
+            <li><strong>SEREMI de Salud:</strong> Para permisos sanitarios</li>
+            <li><strong>SII:</strong> Para temas tributarios</li>
+        </ul>
+    </div>
+</div>

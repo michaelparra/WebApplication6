@@ -1,0 +1,475 @@
+@page
+@model WebApplication3.Pages.FoodTruckModel
+@{
+    ViewData["Title"] = "Food Truck Móvil";
+}
+
+<div class="container">
+    <h1 class="section-title">🚚 Food Truck Móvil de Café</h1>
+    <p class="lead mb-4">Guía completa para establecer y operar un food truck de café de especialidad en Chile</p>
+
+    <div class="recipe-card">
+        <h3 class="recipe-title">Ventajas del Food Truck</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <h5>Beneficios del Modelo Móvil:</h5>
+                <ul>
+                    <li><strong>Menor Inversión Inicial:</strong>
+                        <ul>
+                            <li>Comparado con local fijo</li>
+                            <li>Sin arriendo de local</li>
+                            <li>Menor costo de infraestructura</li>
+                        </ul>
+                    </li>
+                    <li><strong>Flexibilidad de Ubicación:</strong>
+                        <ul>
+                            <li>Eventos y ferias</li>
+                            <li>Diferentes zonas según demanda</li>
+                            <li>Probar mercados</li>
+                        </ul>
+                    </li>
+                    <li><strong>Menor Riesgo:</strong>
+                        <ul>
+                            <li>Prueba de concepto</li>
+                            <li>Escalabilidad</li>
+                            <li>Cambio de ubicación fácil</li>
+                        </ul>
+                    </li>
+                    <li><strong>Marketing Natural:</strong>
+                        <ul>
+                            <li>Vehículo como publicidad</li>
+                            <li>Presencia en eventos</li>
+                            <li>Redes sociales</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <div class="img-placeholder">
+                    <div>
+                        <i style="font-size: 3rem;">🚚</i>
+                        <p>Food Truck</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <h3 class="recipe-title">Selección del Vehículo</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <h5>Opciones de Vehículos:</h5>
+                <ul>
+                    <li><strong>Camioneta Pequeña:</strong>
+                        <ul>
+                            <li>Furgón pequeño o camioneta</li>
+                            <li>Ideal para inicio</li>
+                            <li>Menor inversión</li>
+                            <li>Espacio limitado</li>
+                        </ul>
+                    </li>
+                    <li><strong>Furgón Mediano:</strong>
+                        <ul>
+                            <li>Balance espacio/costo</li>
+                            <li>Más espacio para equipamiento</li>
+                            <li>Mejor para operación continua</li>
+                        </ul>
+                    </li>
+                    <li><strong>Bus o Camión:</strong>
+                        <ul>
+                            <li>Máximo espacio</li>
+                            <li>Mayor inversión</li>
+                            <li>Ideal para alto volumen</li>
+                        </ul>
+                    </li>
+                </ul>
+                <h5 class="mt-3">Consideraciones:</h5>
+                <ul>
+                    <li>Estado mecánico del vehículo</li>
+                    <li>Capacidad de carga</li>
+                    <li>Consumo de combustible</li>
+                    <li>Altura (para techos bajos)</li>
+                    <li>Facilidad de estacionamiento</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <div class="img-placeholder">
+                    <div>
+                        <i style="font-size: 3rem;">🚐</i>
+                        <p>Vehículo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <h3 class="recipe-title">Adecuación del Vehículo</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <h5>Elementos Esenciales:</h5>
+                <ul>
+                    <li><strong>Estructura:</strong>
+                        <ul>
+                            <li>Ventanilla de servicio</li>
+                            <li>Puerta trasera o lateral</li>
+                            <li>Ventilación adecuada</li>
+                            <li>Iluminación</li>
+                        </ul>
+                    </li>
+                    <li><strong>Instalación Eléctrica:</strong>
+                        <ul>
+                            <li>Generador o conexión externa</li>
+                            <li>Capacidad suficiente (mínimo 3000W)</li>
+                            <li>220V para máquinas comerciales</li>
+                            <li>Distribución de circuitos</li>
+                            <li>Protecciones eléctricas</li>
+                        </ul>
+                    </li>
+                    <li><strong>Sistema de Agua:</strong>
+                        <ul>
+                            <li>Tanque de agua potable (mínimo 100L)</li>
+                            <li>Sistema de distribución</li>
+                            <li>Filtro de agua</li>
+                            <li>Drenaje adecuado</li>
+                        </ul>
+                    </li>
+                    <li><strong>Refrigeración:</strong>
+                        <ul>
+                            <li>Refrigerador eficiente</li>
+                            <li>Consumo de energía considerado</li>
+                            <li>Anclaje seguro</li>
+                        </ul>
+                    </li>
+                    <li><strong>Anclajes:</strong>
+                        <ul>
+                            <li>Fijar todos los equipos</li>
+                            <li>Prevenir movimiento durante traslado</li>
+                            <li>Seguridad</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <div class="img-placeholder">
+                    <div>
+                        <i style="font-size: 3rem;">🔧</i>
+                        <p>Adecuación</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <h3 class="recipe-title">Layout y Diseño</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <h5>Distribución del Espacio:</h5>
+                <ul>
+                    <li><strong>Zona de Preparación:</strong>
+                        <ul>
+                            <li>Máquina de espresso</li>
+                            <li>Molino</li>
+                            <li>Área de trabajo</li>
+                            <li>Lavamanos</li>
+                        </ul>
+                    </li>
+                    <li><strong>Zona de Almacenamiento:</strong>
+                        <ul>
+                            <li>Refrigerador</li>
+                            <li>Almacén de café</li>
+                            <li>Insumos</li>
+                            <li>Organización eficiente</li>
+                        </ul>
+                    </li>
+                    <li><strong>Zona de Servicio:</strong>
+                        <ul>
+                            <li>Ventanilla</li>
+                            <li>Área de pago</li>
+                            <li>Acceso fácil</li>
+                        </ul>
+                    </li>
+                    <li><strong>Consideraciones:</strong>
+                        <ul>
+                            <li>Flujo de trabajo eficiente</li>
+                            <li>Espacio para movimiento</li>
+                            <li>Seguridad</li>
+                            <li>Ventilación</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <div class="img-placeholder">
+                    <div>
+                        <i style="font-size: 3rem;">📐</i>
+                        <p>Diseño</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <h3 class="recipe-title">Energía y Generación</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <h5>Opciones de Energía:</h5>
+                <ul>
+                    <li><strong>Generador:</strong>
+                        <ul>
+                            <li>Capacidad mínima 3000W (recomendado 5000W)</li>
+                            <li>Generador silencioso (importante)</li>
+                            <li>Combustible (gasolina o diésel)</li>
+                            <li>Mantenimiento regular</li>
+                        </ul>
+                    </li>
+                    <li><strong>Conexión Externa:</strong>
+                        <ul>
+                            <li>En eventos con electricidad disponible</li>
+                            <li>Cable adecuado y protecciones</li>
+                            <li>Verificar voltaje y capacidad</li>
+                        </ul>
+                    </li>
+                    <li><strong>Baterías (Sistema Híbrido):</strong>
+                        <ul>
+                            <li>Para equipos de bajo consumo</li>
+                            <li>Inversor adecuado</li>
+                            <li>Mayor inversión inicial</li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="warning-box mt-3">
+                    <strong>⚠️ Importante:</strong> Calcula el consumo total de todos tus equipos antes de elegir
+                    el sistema de energía. Una máquina de espresso comercial puede consumir 2000-3000W.
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="img-placeholder">
+                    <div>
+                        <i style="font-size: 3rem;">⚡</i>
+                        <p>Energía</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <h3 class="recipe-title">Estrategia de Ubicación</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <h5>Tipos de Ubicaciones:</h5>
+                <ul>
+                    <li><strong>Ubicación Fija:</strong>
+                        <ul>
+                            <li>Estacionamiento propio o arrendado</li>
+                            <li>Consistencia para clientes</li>
+                            <li>Menor logística</li>
+                        </ul>
+                    </li>
+                    <li><strong>Eventos y Ferias:</strong>
+                        <ul>
+                            <li>Alta concentración de personas</li>
+                            <li>Pago por participación</li>
+                            <li>Planificación anticipada</li>
+                        </ul>
+                    </li>
+                    <li><strong>Rutas Móviles:</strong>
+                        <ul>
+                            <li>Diferentes ubicaciones según día</li>
+                            <li>Oficinas, universidades, etc.</li>
+                            <li>Construir rutina para clientes</li>
+                        </ul>
+                    </li>
+                    <li><strong>Centros Comerciales:</strong>
+                        <ul>
+                            <li>Alto tráfico</li>
+                            <li>Contrato con el centro</li>
+                            <li>Mayor costo</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <div class="img-placeholder">
+                    <div>
+                        <i style="font-size: 3rem;">📍</i>
+                        <p>Ubicación</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <h3 class="recipe-title">Operación Diaria</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <h5>Rutina de Trabajo:</h5>
+                <ul>
+                    <li><strong>Preparación:</strong>
+                        <ul>
+                            <li>Revisión del vehículo</li>
+                            <li>Carga de insumos</li>
+                            <li>Verificación de equipos</li>
+                            <li>Limpieza inicial</li>
+                        </ul>
+                    </li>
+                    <li><strong>Traslado:</strong>
+                        <ul>
+                            <li>Conducción segura</li>
+                            <li>Verificar anclajes</li>
+                            <li>Llegada con anticipación</li>
+                        </ul>
+                    </li>
+                    <li><strong>Instalación:</strong>
+                        <ul>
+                            <li>Estacionamiento adecuado</li>
+                            <li>Conexión de servicios</li>
+                            <li>Calentamiento de equipos</li>
+                            <li>Calibración de espresso</li>
+                        </ul>
+                    </li>
+                    <li><strong>Servicio:</strong>
+                        <ul>
+                            <li>Atención al cliente</li>
+                            <li>Mantener calidad</li>
+                            <li>Limpieza continua</li>
+                        </ul>
+                    </li>
+                    <li><strong>Cierre:</strong>
+                        <ul>
+                            <li>Limpieza profunda</li>
+                            <li>Almacenamiento seguro</li>
+                            <li>Registro de ventas</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <div class="img-placeholder">
+                    <div>
+                        <i style="font-size: 3rem;">⏰</i>
+                        <p>Operación</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <h3 class="recipe-title">Presupuesto Estimado</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <h5>Inversión Inicial (Estimado):</h5>
+                <ul>
+                    <li><strong>Vehículo (usado):</strong> $3,000,000 - $8,000,000 CLP</li>
+                    <li><strong>Adecuación del vehículo:</strong> $2,000,000 - $5,000,000 CLP</li>
+                    <li><strong>Equipamiento de café:</strong> $5,000,000 - $13,700,000 CLP</li>
+                    <li><strong>Generador:</strong> $500,000 - $1,500,000 CLP</li>
+                    <li><strong>Permisos y trámites:</strong> $300,000 - $800,000 CLP</li>
+                    <li><strong>Insumos iniciales:</strong> $500,000 - $1,000,000 CLP</li>
+                    <li><strong>Marketing inicial:</strong> $200,000 - $500,000 CLP</li>
+                    <li><strong><em>Total estimado:</em></strong> <em>$11,500,000 - $30,500,000 CLP</em></li>
+                </ul>
+                <div class="info-box mt-3">
+                    <strong>Nota:</strong> Estos son estimados. Los costos reales pueden variar significativamente.
+                    Considera también un fondo de emergencia para imprevistos.
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="img-placeholder">
+                    <div>
+                        <i style="font-size: 3rem;">💰</i>
+                        <p>Presupuesto</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <h3 class="recipe-title">Marketing y Redes Sociales</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <h5>Estrategias de Marketing:</h5>
+                <ul>
+                    <li><strong>Redes Sociales:</strong>
+                        <ul>
+                            <li>Instagram (visual, ideal para café)</li>
+                            <li>Facebook (eventos, comunidad)</li>
+                            <li>TikTok (contenido creativo)</li>
+                            <li>Publicar ubicación y horarios</li>
+                        </ul>
+                    </li>
+                    <li><strong>Diseño del Vehículo:</strong>
+                        <ul>
+                            <li>Branding visible</li>
+                            <li>Logo y colores</li>
+                            <li>Información de contacto</li>
+                            <li>Redes sociales</li>
+                        </ul>
+                    </li>
+                    <li><strong>Programas de Fidelidad:</strong>
+                        <ul>
+                            <li>Tarjetas de puntos</li>
+                            <li>Descuentos para clientes frecuentes</li>
+                        </ul>
+                    </li>
+                    <li><strong>Colaboraciones:</strong>
+                        <ul>
+                            <li>Con otros negocios locales</li>
+                            <li>Eventos comunitarios</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <div class="img-placeholder">
+                    <div>
+                        <i style="font-size: 3rem;">📱</i>
+                        <p>Marketing</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="success-box mt-4">
+        <h5>✅ Checklist Pre-Apertura:</h5>
+        <ul>
+            <li>☐ Vehículo adecuado y en buen estado</li>
+            <li>☐ Adecuación completa del vehículo</li>
+            <li>☐ Equipamiento instalado y funcionando</li>
+            <li>☐ Todos los permisos obtenidos</li>
+            <li>☐ Personal capacitado</li>
+            <li>☐ Proveedores establecidos</li>
+            <li>☐ Sistema de facturación configurado</li>
+            <li>☐ Marketing inicial realizado</li>
+            <li>☐ Ubicaciones identificadas</li>
+            <li>☐ Fondo de emergencia disponible</li>
+        </ul>
+    </div>
+
+    <div class="info-box mt-4">
+        <h5>💡 Consejos Finales:</h5>
+        <ul>
+            <li>Empieza pequeño y escala gradualmente</li>
+            <li>Construye relaciones con clientes</li>
+            <li>Mantén siempre la calidad del café</li>
+            <li>Escucha feedback de clientes</li>
+            <li>Adapta tu menú según demanda</li>
+            <li>Mantén registros financieros</li>
+            <li>Invierte en buen equipamiento desde el inicio</li>
+            <li>Disfruta el proceso de construir tu negocio</li>
+        </ul>
+    </div>
+
+    <div class="text-center mt-4 mb-3 text-muted small">
+        <p class="mb-0">Contenido creado por <strong>Jesnybel Rodriguez</strong> - Autora, Administradora y Creadora de Contenido</p>
+        <p class="mb-0"><a href="/Contacto" class="text-decoration-none">Más información</a></p>
+    </div>
+</div>

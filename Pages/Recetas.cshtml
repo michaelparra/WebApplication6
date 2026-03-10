@@ -1,0 +1,225 @@
+@page
+@model WebApplication3.Pages.RecetasModel
+@{
+    ViewData["Title"] = "Recetas de Café";
+}
+
+<div class="container">
+    <h1 class="section-title">☕ Recetas de Café de Especialidad</h1>
+    <p class="lead mb-4">Descubre recetas profesionales para preparar café de especialidad de calidad</p>
+
+    <div class="recipe-card">
+        <h3 class="recipe-title">Espresso Perfecto</h3>
+        <div class="row">
+            <div class="col-md-6">
+                <h5>Ingredientes:</h5>
+                <ul class="ingredient-list">
+                    <li>18-20g de café molido (espresso)</li>
+                    <li>30-40ml de agua caliente (90-96°C)</li>
+                    <li>Tiempo de extracción: 25-30 segundos</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <div class="img-placeholder">
+                    <div>
+                        <i style="font-size: 3rem;">☕</i>
+                        <p>Espresso</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h5 class="mt-3">Proceso:</h5>
+        <ol>
+            <li><span class="step-number">1</span> Calienta la máquina de espresso y el portafiltro</li>
+            <li><span class="step-number">2</span> Muele el café justo antes de usar (grosor fino, como azúcar)</li>
+            <li><span class="step-number">3</span> Distribuye el café uniformemente en el portafiltro</li>
+            <li><span class="step-number">4</span> Presiona (tamper) con 15-20kg de presión, superficie plana</li>
+            <li><span class="step-number">5</span> Extrae el espresso: debe salir como "cola de ratón"</li>
+            <li><span class="step-number">6</span> El resultado debe tener crema dorada y espesa</li>
+        </ol>
+    </div>
+
+    <div class="recipe-card">
+        <h3 class="recipe-title">Cappuccino Clásico</h3>
+        <div class="row">
+            <div class="col-md-6">
+                <h5>Ingredientes:</h5>
+                <ul class="ingredient-list">
+                    <li>1 shot de espresso (30ml)</li>
+                    <li>100ml de leche entera fría</li>
+                    <li>Cacao en polvo (opcional)</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <div class="img-placeholder">
+                    <div>
+                        <i style="font-size: 3rem;">☕</i>
+                        <p>Cappuccino</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h5 class="mt-3">Proceso:</h5>
+        <ol>
+            <li><span class="step-number">1</span> Prepara un espresso perfecto</li>
+            <li><span class="step-number">2</span> Vaporiza la leche: introduce la varilla 1cm bajo la superficie</li>
+            <li><span class="step-number">3</span> Crea microespuma: mantén la leche en movimiento circular</li>
+            <li><span class="step-number">4</span> Temperatura ideal: 60-65°C (no más de 70°C)</li>
+            <li><span class="step-number">5</span> Vierte la leche sobre el espresso en movimiento circular</li>
+            <li><span class="step-number">6</span> Proporción: 1/3 espresso, 1/3 leche, 1/3 espuma</li>
+            <li><span class="step-number">7</span> Decora con arte latte o cacao</li>
+        </ol>
+    </div>
+
+    <div class="recipe-card">
+        <h3 class="recipe-title">Café V60 (Método de Goteo)</h3>
+        <div class="row">
+            <div class="col-md-6">
+                <h5>Ingredientes:</h5>
+                <ul class="ingredient-list">
+                    <li>20g de café molido (grosor medio, como sal marina)</li>
+                    <li>300ml de agua filtrada (92-96°C)</li>
+                    <li>V60 y filtro de papel</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <div class="img-placeholder">
+                    <div>
+                        <i style="font-size: 3rem;">☕</i>
+                        <p>V60</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h5 class="mt-3">Proceso (Método de 4 vertidos):</h5>
+        <ol>
+            <li><span class="step-number">1</span> Enjuaga el filtro con agua caliente y desecha</li>
+            <li><span class="step-number">2</span> Agrega el café molido y crea un pequeño hueco en el centro</li>
+            <li><span class="step-number">3</span> <strong>Bloom (0:00-0:45):</strong> Vierte 40ml en espiral, deja reposar</li>
+            <li><span class="step-number">4</span> <strong>Primer vertido (0:45-1:15):</strong> Vierte hasta 100ml en espiral</li>
+            <li><span class="step-number">5</span> <strong>Segundo vertido (1:15-1:45):</strong> Vierte hasta 200ml</li>
+            <li><span class="step-number">6</span> <strong>Tercer vertido (1:45-2:30):</strong> Vierte hasta 300ml</li>
+            <li><span class="step-number">7</span> Tiempo total de extracción: 2:30-3:00 minutos</li>
+            <li><span class="step-number">8</span> Remueve el V60 y sirve inmediatamente</li>
+        </ol>
+    </div>
+
+    <div class="recipe-card">
+        <h3 class="recipe-title">Cold Brew (Café Frío)</h3>
+        <div class="row">
+            <div class="col-md-6">
+                <h5>Ingredientes:</h5>
+                <ul class="ingredient-list">
+                    <li>100g de café molido (grosor grueso)</li>
+                    <li>1 litro de agua fría filtrada</li>
+                    <li>Frasco o jarra grande</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <div class="img-placeholder">
+                    <div>
+                        <i style="font-size: 3rem;">☕</i>
+                        <p>Cold Brew</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h5 class="mt-3">Proceso:</h5>
+        <ol>
+            <li><span class="step-number">1</span> Muele el café en grosor grueso (como pan rallado)</li>
+            <li><span class="step-number">2</span> Agrega el café molido al frasco</li>
+            <li><span class="step-number">3</span> Vierte el agua fría lentamente, asegurando que todo el café se moje</li>
+            <li><span class="step-number">4</span> Revuelve suavemente</li>
+            <li><span class="step-number">5</span> Tapa y deja reposar en refrigerador por 12-24 horas</li>
+            <li><span class="step-number">6</span> Filtra usando un colador fino o filtro de café</li>
+            <li><span class="step-number">7</span> Diluye con agua o leche según preferencia (proporción 1:1 o 1:2)</li>
+            <li><span class="step-number">8</span> Sirve con hielo y disfruta</li>
+        </ol>
+        <div class="info-box mt-3">
+            <strong>Nota:</strong> El cold brew se conserva hasta 2 semanas en refrigerador. Es menos ácido que el café caliente.
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <h3 class="recipe-title">Cortado (Estilo Chileno)</h3>
+        <div class="row">
+            <div class="col-md-6">
+                <h5>Ingredientes:</h5>
+                <ul class="ingredient-list">
+                    <li>1 shot de espresso (30ml)</li>
+                    <li>30-50ml de leche vaporizada</li>
+                    <li>Azúcar (opcional, según preferencia)</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <div class="img-placeholder">
+                    <div>
+                        <i style="font-size: 3rem;">☕</i>
+                        <p>Cortado</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h5 class="mt-3">Proceso:</h5>
+        <ol>
+            <li><span class="step-number">1</span> Prepara un espresso perfecto</li>
+            <li><span class="step-number">2</span> Vaporiza la leche (menos espuma que cappuccino)</li>
+            <li><span class="step-number">3</span> Vierte la leche directamente sobre el espresso</li>
+            <li><span class="step-number">4</span> Proporción típica: 1:1 o 1:1.5 (espresso:leche)</li>
+            <li><span class="step-number">5</span> Sirve en taza pequeña (100-150ml)</li>
+        </ol>
+        <div class="info-box mt-3">
+            <strong>Variación Chilena:</strong> El cortado es muy popular en Chile. Se diferencia del cortado español por usar menos leche y mantener más el sabor del espresso.
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <h3 class="recipe-title">Café Aeropress</h3>
+        <div class="row">
+            <div class="col-md-6">
+                <h5>Ingredientes:</h5>
+                <ul class="ingredient-list">
+                    <li>17g de café molido (grosor fino-medio)</li>
+                    <li>250ml de agua (85-90°C)</li>
+                    <li>Aeropress y filtros</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <div class="img-placeholder">
+                    <div>
+                        <i style="font-size: 3rem;">☕</i>
+                        <p>Aeropress</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h5 class="mt-3">Proceso (Método Invertido):</h5>
+        <ol>
+            <li><span class="step-number">1</span> Coloca el Aeropress invertido (plunger abajo)</li>
+            <li><span class="step-number">2</span> Agrega el café molido</li>
+            <li><span class="step-number">3</span> Vierte 50ml de agua y agita suavemente</li>
+            <li><span class="step-number">4</span> Deja bloom por 30 segundos</li>
+            <li><span class="step-number">5</span> Vierte el resto del agua hasta 250ml</li>
+            <li><span class="step-number">6</span> Revuelve 10 veces</li>
+            <li><span class="step-number">7</span> Coloca el filtro y enrosca</li>
+            <li><span class="step-number">8</span> Invierte sobre la taza y presiona suavemente por 30-45 segundos</li>
+        </ol>
+    </div>
+
+    <div class="info-box mt-4">
+        <h5>💡 Consejos Generales para Todas las Recetas:</h5>
+        <ul>
+            <li>Usa café recién tostado (máximo 2-3 semanas después del tueste)</li>
+            <li>Muele el café justo antes de preparar</li>
+            <li>Usa agua filtrada de buena calidad</li>
+            <li>Controla la temperatura del agua según el método</li>
+            <li>Limpia y mantén tu equipo regularmente</li>
+            <li>Experimenta con diferentes proporciones según tu paladar</li>
+        </ul>
+    </div>
+
+    <div class="text-center mt-4 mb-3 text-muted small">
+        <p class="mb-0">Recetas creadas por <strong>Jesnybel Rodriguez</strong> - Autora, Administradora y Creadora de Contenido</p>
+        <p class="mb-0"><a href="/Contacto" class="text-decoration-none">Más información</a></p>
+    </div>
+</div>

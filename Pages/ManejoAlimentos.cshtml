@@ -1,0 +1,275 @@
+@page
+@model WebApplication3.Pages.ManejoAlimentosModel
+@{
+    ViewData["Title"] = "Manejo Seguro de Alimentos";
+}
+
+<div class="container">
+    <h1 class="section-title">🍽️ Manejo Seguro de Alimentos</h1>
+    <p class="lead mb-4">Normas y prácticas esenciales para manipulación segura de alimentos en tu food truck de café</p>
+
+    <div class="warning-box">
+        <h4>⚠️ Importante</h4>
+        <p>
+            El manejo seguro de alimentos es <strong>obligatorio</strong> y está regulado por el Ministerio de Salud de Chile.
+            Estas prácticas son esenciales para obtener y mantener tu permiso sanitario.
+        </p>
+    </div>
+
+    <div class="recipe-card">
+        <h3 class="recipe-title">1. Higiene Personal</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <h5>Reglas Fundamentales:</h5>
+                <ul>
+                    <li><strong>Lavado de manos:</strong>
+                        <ul>
+                            <li>Antes de comenzar a trabajar</li>
+                            <li>Después de usar el baño</li>
+                            <li>Después de tocar dinero</li>
+                            <li>Después de tocar superficies sucias</li>
+                            <li>Después de estornudar o toser</li>
+                            <li>Usa agua caliente y jabón, mínimo 20 segundos</li>
+                        </ul>
+                    </li>
+                    <li><strong>Uñas:</strong> Cortas, limpias, sin esmalte</li>
+                    <li><strong>Cabello:</strong> Siempre cubierto (gorro, cofia, o red)</li>
+                    <li><strong>Ropa:</strong> Limpia, preferiblemente de color claro</li>
+                    <li><strong>Joyería:</strong> Mínima (solo anillo de matrimonio permitido)</li>
+                    <li><strong>Salud:</strong> No trabajar si tienes síntomas de enfermedad</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <div class="img-placeholder">
+                    <div>
+                        <i style="font-size: 3rem;">🧼</i>
+                        <p>Higiene</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <h3 class="recipe-title">2. Almacenamiento de Alimentos</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <h5>Zona de Peligro de Temperatura:</h5>
+                <ul>
+                    <li><strong>Zona de peligro:</strong> 5°C a 60°C (temperatura donde bacterias crecen rápidamente)</li>
+                    <li><strong>Alimentos fríos:</strong> Mantener a ≤4°C</li>
+                    <li><strong>Alimentos calientes:</strong> Mantener a ≥60°C</li>
+                    <li><strong>Leche y productos lácteos:</strong> Refrigerar a ≤4°C</li>
+                    <li><strong>Café en grano:</strong> Almacenar en lugar seco, fresco, sin olores</li>
+                    <li><strong>Separación:</strong> Alimentos crudos separados de cocidos</li>
+                </ul>
+                <div class="info-box mt-3">
+                    <strong>Regla de las 2 horas:</strong> Los alimentos no deben estar en zona de peligro más de 2 horas. Después de 2 horas, desechar.
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="img-placeholder">
+                    <div>
+                        <i style="font-size: 3rem;">❄️</i>
+                        <p>Refrigeración</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <h3 class="recipe-title">3. Limpieza y Sanitización</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <h5>Diferencia Importante:</h5>
+                <ul>
+                    <li><strong>Limpieza:</strong> Remover suciedad visible (usar detergente)</li>
+                    <li><strong>Sanitización:</strong> Reducir microorganismos a niveles seguros (usar sanitizante)</li>
+                </ul>
+                <h5 class="mt-3">Proceso de Limpieza y Sanitización:</h5>
+                <ol>
+                    <li><strong>Pre-lavado:</strong> Remover residuos grandes</li>
+                    <li><strong>Lavado:</strong> Con agua caliente y detergente</li>
+                    <li><strong>Enjuague:</strong> Con agua limpia</li>
+                    <li><strong>Sanitización:</strong> Aplicar sanitizante aprobado</li>
+                    <li><strong>Secado al aire:</strong> No usar trapos que puedan contaminar</li>
+                </ol>
+                <h5 class="mt-3">Frecuencia:</h5>
+                <ul>
+                    <li><strong>Superficies de contacto con alimentos:</strong> Después de cada uso</li>
+                    <li><strong>Equipos:</strong> Diariamente</li>
+                    <li><strong>Áreas de preparación:</strong> Continuamente durante el servicio</li>
+                    <li><strong>Limpieza profunda:</strong> Al final del día</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <div class="img-placeholder">
+                    <div>
+                        <i style="font-size: 3rem;">🧽</i>
+                        <p>Limpieza</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <h3 class="recipe-title">4. Manejo de Leche y Productos Lácteos</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <h5>Prácticas Específicas:</h5>
+                <ul>
+                    <li><strong>Cadena de frío:</strong> Mantener leche refrigerada hasta el momento de usar</li>
+                    <li><strong>Temperatura de almacenamiento:</strong> ≤4°C</li>
+                    <li><strong>Fechas de vencimiento:</strong> Verificar y rotar stock (FIFO)</li>
+                    <li><strong>Leche abierta:</strong> Usar dentro de 3-5 días, mantener refrigerada</li>
+                    <li><strong>Vaporización:</strong> Calentar a ≥60°C para vaporizar, no reutilizar leche vaporizada</li>
+                    <li><strong>Contaminación cruzada:</strong> No mezclar leches de diferentes contenedores</li>
+                    <li><strong>Alergias:</strong> Tener opciones sin lactosa claramente identificadas</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <div class="img-placeholder">
+                    <div>
+                        <i style="font-size: 3rem;">🥛</i>
+                        <p>Leche</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <h3 class="recipe-title">5. Manejo de Agua</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <h5>Calidad del Agua:</h5>
+                <ul>
+                    <li><strong>Agua potable:</strong> Solo usar agua potable certificada</li>
+                    <li><strong>Filtración:</strong> Usar filtros de agua para mejorar sabor y calidad</li>
+                    <li><strong>Tanques de agua:</strong> Limpiar y sanitizar regularmente</li>
+                    <li><strong>Temperatura:</strong> Agua caliente para preparación ≥60°C</li>
+                    <li><strong>Pruebas:</strong> Realizar análisis de agua periódicamente</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <div class="img-placeholder">
+                    <div>
+                        <i style="font-size: 3rem;">💧</i>
+                        <p>Agua</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <h3 class="recipe-title">6. Control de Plagas</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <h5>Prevención en Food Truck:</h5>
+                <ul>
+                    <li><strong>Almacenamiento:</strong> Todos los alimentos en contenedores herméticos</li>
+                    <li><strong>Limpieza:</strong> No dejar residuos de comida</li>
+                    <li><strong>Basura:</strong> Contenedores con tapa, vaciar regularmente</li>
+                    <li><strong>Inspección:</strong> Revisar regularmente signos de plagas</li>
+                    <li><strong>Ventilación:</strong> Mantener áreas bien ventiladas</li>
+                    <li><strong>Reparaciones:</strong> Sellar grietas y agujeros</li>
+                    <li><strong>Profesional:</strong> Contratar servicio de control de plagas si es necesario</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <div class="img-placeholder">
+                    <div>
+                        <i style="font-size: 3rem;">🐛</i>
+                        <p>Control</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <h3 class="recipe-title">7. Registro y Documentación</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <h5>Documentos Requeridos (Chile):</h5>
+                <ul>
+                    <li><strong>Registro de temperaturas:</strong> Refrigeradores y congeladores (2 veces al día)</li>
+                    <li><strong>Registro de limpieza:</strong> Fechas y responsables</li>
+                    <li><strong>Registro de recepción:</strong> Fechas de llegada de productos</li>
+                    <li><strong>Control de fechas de vencimiento:</strong> Verificación regular</li>
+                    <li><strong>Capacitación del personal:</strong> Registro de cursos de manipulación de alimentos</li>
+                </ul>
+                <div class="info-box mt-3">
+                    <strong>Nota:</strong> Estos registros son obligatorios y pueden ser solicitados por la autoridad sanitaria en cualquier momento.
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="img-placeholder">
+                    <div>
+                        <i style="font-size: 3rem;">📝</i>
+                        <p>Registros</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <h3 class="recipe-title">8. Alergias e Intolerancias</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <h5>Consideraciones Importantes:</h5>
+                <ul>
+                    <li><strong>Información al cliente:</strong> Tener lista de ingredientes disponible</li>
+                    <li><strong>Alérgenos comunes:</strong>
+                        <ul>
+                            <li>Lactosa (leche)</li>
+                            <li>Gluten (si ofreces productos con harina)</li>
+                            <li>Frutos secos (si usas leches vegetales con nueces)</li>
+                        </ul>
+                    </li>
+                    <li><strong>Separación:</strong> Usar equipos separados para preparar bebidas sin alérgenos</li>
+                    <li><strong>Capacitación:</strong> Todo el personal debe conocer los alérgenos</li>
+                    <li><strong>Comunicación:</strong> Preguntar siempre sobre alergias antes de preparar</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <div class="img-placeholder">
+                    <div>
+                        <i style="font-size: 3rem;">⚠️</i>
+                        <p>Alergias</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="success-box mt-4">
+        <h5>✅ Checklist de Manejo Seguro de Alimentos:</h5>
+        <ul>
+            <li>☐ Personal capacitado en manipulación de alimentos</li>
+            <li>☐ Certificados de capacitación vigentes</li>
+            <li>☐ Área de trabajo limpia y organizada</li>
+            <li>☐ Temperaturas de almacenamiento correctas</li>
+            <li>☐ Equipos de limpieza y sanitización disponibles</li>
+            <li>☐ Registros actualizados</li>
+            <li>☐ Control de plagas implementado</li>
+            <li>☐ Información de alérgenos disponible</li>
+            <li>☐ Agua potable certificada</li>
+            <li>☐ Sistema de eliminación de residuos adecuado</li>
+        </ul>
+    </div>
+
+    <div class="warning-box mt-4">
+        <h5>📋 Requisitos Legales en Chile:</h5>
+        <p>
+            Para operar un food truck de café en Chile, debes cumplir con las normativas del 
+            <strong>Reglamento Sanitario de los Alimentos (RSA)</strong> y obtener el 
+            <strong>Permiso Sanitario</strong> correspondiente. Ver sección de 
+            <a href="/PermisosSanitarios" class="text-decoration-none">Permisos Sanitarios</a> para más información.
+        </p>
+    </div>
+</div>

@@ -1,0 +1,386 @@
+@page
+@model WebApplication3.Pages.ImpuestosModel
+@{
+    ViewData["Title"] = "Impuestos y Obligaciones Tributarias";
+}
+
+<div class="container">
+    <h1 class="section-title">💰 Impuestos y Obligaciones Tributarias</h1>
+    <p class="lead mb-4">Guía sobre obligaciones tributarias para food truck de café en Chile</p>
+
+    <div class="warning-box">
+        <h4>⚠️ Importante</h4>
+        <p>
+            Esta información es una guía general. Las obligaciones tributarias pueden variar según tu situación específica.
+            Es <strong>altamente recomendable</strong> consultar con un contador o asesor tributario para tu caso particular.
+        </p>
+    </div>
+
+    <div class="recipe-card">
+        <h3 class="recipe-title">Inicio de Actividades en SII</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <h5>Pasos Iniciales:</h5>
+                <ol>
+                    <li><strong>Iniciar Actividades:</strong>
+                        <ul>
+                            <li>Declarar inicio de actividades en SII</li>
+                            <li>Plazo: dentro de los 2 meses siguientes al inicio</li>
+                            <li>Formulario 4415</li>
+                            <li>Puede hacerse online en www.sii.cl</li>
+                        </ul>
+                    </li>
+                    <li><strong>Determinar Régimen Tributario:</strong>
+                        <ul>
+                            <li>Régimen General</li>
+                            <li>Régimen Pro Pyme (si calificas)</li>
+                            <li>Régimen de Facturación Electrónica</li>
+                        </ul>
+                    </li>
+                    <li><strong>Obtener RUT Tributario:</strong>
+                        <ul>
+                            <li>Si no lo tienes, obtener RUT</li>
+                            <li>Necesario para todas las operaciones</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+            <div class="col-md-4">
+                <div class="img-placeholder">
+                    <div>
+                        <i style="font-size: 3rem;">📋</i>
+                        <p>SII</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <h3 class="recipe-title">IVA (Impuesto al Valor Agregado)</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <h5>Obligaciones:</h5>
+                <ul>
+                    <li><strong>Facturación:</strong>
+                        <ul>
+                            <li>Emitir boletas o facturas por todas las ventas</li>
+                            <li>Facturación electrónica obligatoria</li>
+                            <li>Incluir IVA (19%) en el precio</li>
+                        </ul>
+                    </li>
+                    <li><strong>Declaración Mensual:</strong>
+                        <ul>
+                            <li>Declarar IVA mensualmente</li>
+                            <li>Plazo: hasta el día 12 del mes siguiente</li>
+                            <li>Formulario F29</li>
+                        </ul>
+                    </li>
+                    <li><strong>Cálculo:</strong>
+                        <ul>
+                            <li>IVA Débito: IVA de tus ventas</li>
+                            <li>IVA Crédito: IVA de tus compras</li>
+                            <li>IVA a Pagar = IVA Débito - IVA Crédito</li>
+                        </ul>
+                    </li>
+                    <li><strong>Exenciones:</strong>
+                        <ul>
+                            <li>Algunos productos pueden estar exentos</li>
+                            <li>Verificar según normativa vigente</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <div class="img-placeholder">
+                    <div>
+                        <i style="font-size: 3rem;">📊</i>
+                        <p>IVA</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <h3 class="recipe-title">Impuesto a la Renta</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <h5>Tipos de Contribuyentes:</h5>
+                <ul>
+                    <li><strong>Persona Natural con Inicio de Actividades:</strong>
+                        <ul>
+                            <li>Declaración anual de renta</li>
+                            <li>Pago de impuestos según tramos</li>
+                            <li>Llevar contabilidad básica</li>
+                        </ul>
+                    </li>
+                    <li><strong>Empresa (EIRL, SpA, etc.):</strong>
+                        <ul>
+                            <li>Impuesto de Primera Categoría (25%)</li>
+                            <li>Contabilidad completa</li>
+                            <li>Estados financieros</li>
+                        </ul>
+                    </li>
+                </ul>
+                <h5 class="mt-3">Deducciones Permitidas:</h5>
+                <ul>
+                    <li>Costos directos (café, leche, insumos)</li>
+                    <li>Gastos operacionales (combustible, mantenimiento)</li>
+                    <li>Arriendos y servicios</li>
+                    <li>Depreciación de activos</li>
+                    <li>Gastos de personal</li>
+                    <li>Capacitación</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <div class="img-placeholder">
+                    <div>
+                        <i style="font-size: 3rem;">💼</i>
+                        <p>Renta</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <h3 class="recipe-title">Facturación Electrónica</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <h5>Obligatorio desde 2023:</h5>
+                <ul>
+                    <li><strong>Boletas Electrónicas:</strong>
+                        <ul>
+                            <li>Obligatorio para todos los contribuyentes</li>
+                            <li>Emitir a través de SII</li>
+                            <li>Gratuito</li>
+                        </ul>
+                    </li>
+                    <li><strong>Facturas Electrónicas:</strong>
+                        <ul>
+                            <li>Para ventas a empresas</li>
+                            <li>Obligatorio si tu cliente lo requiere</li>
+                        </ul>
+                    </li>
+                    <li><strong>Ventajas:</strong>
+                        <ul>
+                            <li>Control automático de inventario</li>
+                            <li>Reducción de errores</li>
+                            <li>Cumplimiento automático</li>
+                        </ul>
+                    </li>
+                    <li><strong>Implementación:</strong>
+                        <ul>
+                            <li>Registro en portal SII</li>
+                            <li>Configuración de productos</li>
+                            <li>Uso de app móvil o sistema</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <div class="img-placeholder">
+                    <div>
+                        <i style="font-size: 3rem;">📱</i>
+                        <p>Facturación</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <h3 class="recipe-title">Contabilidad Básica</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <h5>Registros Necesarios:</h5>
+                <ul>
+                    <li><strong>Libro de Ingresos y Egresos:</strong>
+                        <ul>
+                            <li>Registrar todas las ventas</li>
+                            <li>Registrar todos los gastos</li>
+                            <li>Mantener comprobantes</li>
+                        </ul>
+                    </li>
+                    <li><strong>Control de Inventario:</strong>
+                        <ul>
+                            <li>Entradas de productos</li>
+                            <li>Salidas (ventas)</li>
+                            <li>Stock actual</li>
+                        </ul>
+                    </li>
+                    <li><strong>Comprobantes:</strong>
+                        <ul>
+                            <li>Guardar todas las boletas y facturas</li>
+                            <li>Organizar por fecha</li>
+                            <li>Mantener por 6 años</li>
+                        </ul>
+                    </li>
+                    <li><strong>Conciliación Bancaria:</strong>
+                        <ul>
+                            <li>Si usas cuenta corriente</li>
+                            <li>Reconciliar movimientos</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <div class="img-placeholder">
+                    <div>
+                        <i style="font-size: 3rem;">📚</i>
+                        <p>Contabilidad</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <h3 class="recipe-title">Régimen Pro Pyme</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <h5>Beneficios (si calificas):</h5>
+                <ul>
+                    <li><strong>Requisitos:</strong>
+                        <ul>
+                            <li>Ventas anuales < 100,000 UF</li>
+                            <li>Activos < 25,000 UF</li>
+                        </ul>
+                    </li>
+                    <li><strong>Beneficios:</strong>
+                        <ul>
+                            <li>Pago de impuestos simplificado</li>
+                            <li>Menor tasa de impuesto a la renta</li>
+                            <li>Facilidades de pago</li>
+                        </ul>
+                    </li>
+                    <li><strong>Declaración:</strong>
+                        <ul>
+                            <li>Declaración anual simplificada</li>
+                            <li>Menos requisitos contables</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <div class="img-placeholder">
+                    <div>
+                        <i style="font-size: 3rem;">🏆</i>
+                        <p>Pro Pyme</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <h3 class="recipe-title">Pagos Provisionales</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <h5>Impuestos Mensuales:</h5>
+                <ul>
+                    <li><strong>IVA:</strong>
+                        <ul>
+                            <li>Mensual (día 12)</li>
+                            <li>Según declaración F29</li>
+                        </ul>
+                    </li>
+                    <li><strong>PPM (Pago Provisional Mensual):</strong>
+                        <ul>
+                            <li>Si aplica según tu régimen</li>
+                            <li>Pago anticipado de impuesto a la renta</li>
+                            <li>Se descuenta de impuesto anual</li>
+                        </ul>
+                    </li>
+                    <li><strong>Formas de Pago:</strong>
+                        <ul>
+                            <li>Online en portal SII</li>
+                            <li>Bancos autorizados</li>
+                            <li>Transferencia bancaria</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <div class="img-placeholder">
+                    <div>
+                        <i style="font-size: 3rem;">💳</i>
+                        <p>Pagos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <h3 class="recipe-title">Consejos para Gestión Tributaria</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <h5>Mejores Prácticas:</h5>
+                <ul>
+                    <li><strong>Organización:</strong>
+                        <ul>
+                            <li>Mantener registros actualizados</li>
+                            <li>Guardar todos los comprobantes</li>
+                            <li>Usar sistema de facturación</li>
+                        </ul>
+                    </li>
+                    <li><strong>Asesoría Profesional:</strong>
+                        <ul>
+                            <li>Contratar contador</li>
+                            <li>Revisión periódica</li>
+                            <li>Evitar errores costosos</li>
+                        </ul>
+                    </li>
+                    <li><strong>Planificación:</strong>
+                        <ul>
+                            <li>Presupuesto para impuestos</li>
+                            <li>Separar IVA recaudado</li>
+                            <li>Preparar para declaración anual</li>
+                        </ul>
+                    </li>
+                    <li><strong>Cumplimiento:</strong>
+                        <ul>
+                            <li>Pagar a tiempo</li>
+                            <li>Evitar multas e intereses</li>
+                            <li>Mantener buena relación con SII</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <div class="img-placeholder">
+                    <div>
+                        <i style="font-size: 3rem;">💡</i>
+                        <p>Consejos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="info-box mt-4">
+        <h5>💡 Recursos Útiles:</h5>
+        <ul>
+            <li><strong>SII Online:</strong> <a href="https://www.sii.cl" target="_blank" class="text-decoration-none">www.sii.cl</a></li>
+            <li><strong>Portal de Facturación:</strong> Facturación electrónica gratuita</li>
+            <li><strong>Consultas:</strong> Línea telefónica SII o consultas online</li>
+            <li><strong>Capacitación:</strong> Cursos gratuitos del SII</li>
+        </ul>
+    </div>
+
+    <div class="warning-box mt-4">
+        <h5>⚠️ Recordatorio Importante:</h5>
+        <p>
+            Esta información es una guía general. Las leyes tributarias cambian frecuentemente.
+            Siempre consulta con un profesional calificado para asesoría específica sobre tu situación.
+            El incumplimiento de obligaciones tributarias puede resultar en multas e intereses.
+        </p>
+    </div>
+
+    <div class="text-center mt-4 mb-3 text-muted small">
+        <p class="mb-0">Contenido creado por <strong>Jesnybel Rodriguez</strong> - Autora, Administradora y Creadora de Contenido</p>
+        <p class="mb-0"><a href="/Contacto" class="text-decoration-none">Más información</a></p>
+    </div>
+</div>
